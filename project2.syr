@@ -1,0 +1,1006 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: project2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "project2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : project2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/my_icon.vhd" in Library work.
+Entity <my_icon> compiled.
+Entity <my_icon> (Architecture <my_icon_a>) compiled.
+Compiling vhdl file "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/my_ila.vhd" in Library work.
+Entity <my_ila> compiled.
+Entity <my_ila> (Architecture <my_ila_a>) compiled.
+Compiling vhdl file "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/clock_gen.vhd" in Library work.
+Architecture behavioral of Entity clock_gen is up to date.
+Compiling vhdl file "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+Compiling vhdl file "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhd" in Library work.
+Architecture behavioral of Entity paddles is up to date.
+Compiling vhdl file "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd" in Library work.
+Entity <project2> compiled.
+Entity <project2> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <project2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clock_gen> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <paddles> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <project2> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd" line 115: Instantiating black box module <my_icon>.
+WARNING:Xst:2211 - "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd" line 117: Instantiating black box module <my_ila>.
+WARNING:Xst:819 - "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd" line 250: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <VSync>, <HSync>, <y>, <x>, <p1_y>, <p2_y>, <bally>, <ballx>, <pause>
+Entity <project2> analyzed. Unit <project2> generated.
+
+Analyzing Entity <clock_gen> in library <work> (Architecture <behavioral>).
+Entity <clock_gen> analyzed. Unit <clock_gen> generated.
+
+Analyzing Entity <counter> in library <work> (Architecture <behavioral>).
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <paddles> in library <work> (Architecture <behavioral>).
+Entity <paddles> analyzed. Unit <paddles> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock_gen>.
+    Related source file is "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/clock_gen.vhd".
+    Found 1-bit register for signal <sclk>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <clock_gen> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhd".
+    Found 32-bit up counter for signal <h>.
+    Found 32-bit comparator less for signal <h$cmp_lt0000> created at line 46.
+    Found 32-bit up counter for signal <v>.
+    Found 32-bit comparator less for signal <v$cmp_lt0000> created at line 50.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 Comparator(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <paddles>.
+    Related source file is "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhd".
+    Found 32-bit up counter for signal <delay>.
+    Found 32-bit comparator greater for signal <delay$cmp_gt0000> created at line 54.
+    Found 32-bit updown counter for signal <pos1>.
+    Found 32-bit comparator greater for signal <pos1$cmp_gt0000> created at line 72.
+    Found 32-bit comparator lessequal for signal <pos1$cmp_le0000> created at line 54.
+    Found 32-bit comparator less for signal <pos1$cmp_lt0000> created at line 73.
+    Found 1-bit xor2 for signal <pos1$xor0000> created at line 56.
+    Found 32-bit updown counter for signal <pos2>.
+    Found 32-bit comparator greater for signal <pos2$cmp_gt0000> created at line 74.
+    Found 32-bit comparator less for signal <pos2$cmp_lt0000> created at line 75.
+    Found 1-bit xor2 for signal <pos2$xor0000> created at line 63.
+    Summary:
+	inferred   3 Counter(s).
+	inferred   6 Comparator(s).
+Unit <paddles> synthesized.
+
+
+Synthesizing Unit <project2>.
+    Related source file is "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd".
+WARNING:Xst:1780 - Signal <vBP> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <hBP> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 32-bit latch for signal <x>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit up counter for signal <ballcounter>.
+    Found 32-bit register for signal <ballx>.
+    Found 32-bit adder for signal <ballx$add0001> created at line 178.
+    Found 32-bit comparator greater for signal <ballx$cmp_gt0001> created at line 176.
+    Found 32-bit 4-to-1 multiplexer for signal <ballx$mux0001> created at line 182.
+    Found 32-bit 4-to-1 multiplexer for signal <ballx$mux0004>.
+    Found 32-bit register for signal <bally>.
+    Found 32-bit adder for signal <bally$add0000> created at line 182.
+    Found 32-bit adder for signal <bally$add0001> created at line 179.
+    Found 32-bit comparator lessequal for signal <bally$cmp_le0000> created at line 182.
+    Found 32-bit 4-to-1 multiplexer for signal <bally$mux0001> created at line 182.
+    Found 32-bit 4-to-1 multiplexer for signal <bally$mux0004>.
+    Found 32-bit subtractor for signal <bally$sub0000> created at line 182.
+    Found 32-bit subtractor for signal <bally$sub0001> created at line 182.
+    Found 32-bit register for signal <pause>.
+    Found 32-bit adder for signal <pause$add0000> created at line 196.
+    Found 32-bit adder for signal <pause$addsub0000> created at line 184.
+    Found 32-bit comparator greatequal for signal <pause$cmp_ge0000> created at line 182.
+    Found 32-bit comparator greater for signal <pause$cmp_gt0000> created at line 182.
+    Found 32-bit comparator lessequal for signal <pause$cmp_le0000> created at line 182.
+    Found 32-bit comparator lessequal for signal <pause$cmp_le0001> created at line 176.
+    Found 32-bit comparator less for signal <pause$cmp_lt0000> created at line 196.
+    Found 32-bit adder for signal <sB$add0000> created at line 272.
+    Found 32-bit adder for signal <sB$add0001> created at line 277.
+    Found 32-bit adder for signal <sB$add0002> created at line 282.
+    Found 32-bit adder for signal <sB$add0003> created at line 282.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0000> created at line 254.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0001> created at line 257.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0002> created at line 257.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0003> created at line 257.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0004> created at line 257.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0005> created at line 257.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0006> created at line 265.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0007> created at line 265.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0008> created at line 265.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0009> created at line 265.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0010> created at line 265.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0011> created at line 265.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0012> created at line 272.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0013> created at line 272.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0014> created at line 277.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0015> created at line 277.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0016> created at line 282.
+    Found 32-bit comparator greater for signal <sB$cmp_gt0017> created at line 282.
+    Found 32-bit comparator less for signal <sB$cmp_lt0000> created at line 254.
+    Found 32-bit comparator less for signal <sB$cmp_lt0001> created at line 257.
+    Found 32-bit comparator less for signal <sB$cmp_lt0002> created at line 257.
+    Found 32-bit comparator less for signal <sB$cmp_lt0003> created at line 257.
+    Found 32-bit comparator less for signal <sB$cmp_lt0004> created at line 257.
+    Found 32-bit comparator less for signal <sB$cmp_lt0005> created at line 257.
+    Found 32-bit comparator less for signal <sB$cmp_lt0006> created at line 265.
+    Found 32-bit comparator less for signal <sB$cmp_lt0007> created at line 265.
+    Found 32-bit comparator less for signal <sB$cmp_lt0008> created at line 265.
+    Found 32-bit comparator less for signal <sB$cmp_lt0009> created at line 265.
+    Found 32-bit comparator less for signal <sB$cmp_lt0010> created at line 265.
+    Found 32-bit comparator less for signal <sB$cmp_lt0011> created at line 265.
+    Found 32-bit comparator less for signal <sB$cmp_lt0012> created at line 272.
+    Found 32-bit comparator less for signal <sB$cmp_lt0013> created at line 272.
+    Found 32-bit comparator less for signal <sB$cmp_lt0014> created at line 277.
+    Found 32-bit comparator less for signal <sB$cmp_lt0015> created at line 277.
+    Found 32-bit comparator less for signal <sB$cmp_lt0016> created at line 282.
+    Found 32-bit comparator less for signal <sB$cmp_lt0017> created at line 282.
+    Found 32-bit subtractor for signal <sB$sub0000> created at line 272.
+    Found 32-bit subtractor for signal <sB$sub0001> created at line 277.
+    Found 32-bit subtractor for signal <sB$sub0002> created at line 282.
+    Found 32-bit subtractor for signal <sB$sub0003> created at line 282.
+    Found 32-bit comparator greater for signal <sG$cmp_gt0000> created at line 285.
+    Found 32-bit comparator greater for signal <sH$cmp_gt0000> created at line 142.
+    Found 32-bit comparator less for signal <sH$cmp_lt0000> created at line 142.
+    Found 32-bit comparator greater for signal <sV$cmp_gt0000> created at line 148.
+    Found 32-bit comparator less for signal <sV$cmp_lt0000> created at line 148.
+    Found 32-bit comparator less for signal <x$cmp_lt0000> created at line 152.
+    Found 32-bit register for signal <x_vel>.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0000> created at line 211.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0001> created at line 216.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0002> created at line 232.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0003> created at line 209.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0004> created at line 217.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0005> created at line 196.
+    Found 32-bit comparator greatequal for signal <x_vel$cmp_ge0006> created at line 211.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0000> created at line 210.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0001> created at line 209.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0002> created at line 218.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0003> created at line 217.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0004> created at line 216.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0005> created at line 230.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0006> created at line 230.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0007> created at line 231.
+    Found 32-bit comparator greater for signal <x_vel$cmp_gt0008> created at line 196.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0000> created at line 218.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0001> created at line 216.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0002> created at line 231.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0003> created at line 230.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0004> created at line 209.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0005> created at line 230.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0006> created at line 210.
+    Found 32-bit comparator lessequal for signal <x_vel$cmp_le0007> created at line 218.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0000> created at line 211.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0001> created at line 210.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0002> created at line 209.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0003> created at line 217.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0004> created at line 216.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0005> created at line 232.
+    Found 32-bit comparator less for signal <x_vel$cmp_lt0006> created at line 196.
+    Found 32-bit comparator less for signal <y$cmp_lt0000> created at line 154.
+    Found 32-bit register for signal <y_vel>.
+    Found 32-bit comparator greatequal for signal <y_vel$cmp_ge0000> created at line 239.
+    Found 32-bit comparator greater for signal <y_vel$cmp_gt0000> created at line 238.
+    Found 32-bit comparator lessequal for signal <y_vel$cmp_le0000> created at line 238.
+    Found 32-bit comparator less for signal <y_vel$cmp_lt0000> created at line 239.
+    Found 32-bit 4-to-1 multiplexer for signal <y_vel$mux0000>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 160 D-type flip-flop(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred  85 Comparator(s).
+	inferred 160 Multiplexer(s).
+Unit <project2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 32-bit adder                                          : 9
+ 32-bit subtractor                                     : 6
+# Counters                                             : 6
+ 32-bit up counter                                     : 4
+ 32-bit updown counter                                 : 2
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 32-bit register                                       : 5
+# Latches                                              : 2
+ 32-bit latch                                          : 2
+# Comparators                                          : 93
+ 32-bit comparator greatequal                          : 9
+ 32-bit comparator greater                             : 36
+ 32-bit comparator less                                : 35
+ 32-bit comparator lessequal                           : 13
+# Multiplexers                                         : 5
+ 32-bit 4-to-1 multiplexer                             : 5
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/my_icon.ngc>.
+Reading core <ipcore_dir/my_ila.ngc>.
+Loading core <my_icon> for timing and area information for instance <icon>.
+Loading core <my_ila> for timing and area information for instance <ila>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 32-bit adder                                          : 9
+ 32-bit subtractor                                     : 6
+# Counters                                             : 6
+ 32-bit up counter                                     : 4
+ 32-bit updown counter                                 : 2
+# Registers                                            : 161
+ Flip-Flops                                            : 161
+# Latches                                              : 2
+ 32-bit latch                                          : 2
+# Comparators                                          : 93
+ 32-bit comparator greatequal                          : 9
+ 32-bit comparator greater                             : 36
+ 32-bit comparator less                                : 35
+ 32-bit comparator lessequal                           : 13
+# Multiplexers                                         : 5
+ 32-bit 4-to-1 multiplexer                             : 5
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <y_vel_1> in Unit <project2> is equivalent to the following 30 FFs/Latches, which will be removed : <y_vel_2> <y_vel_3> <y_vel_4> <y_vel_5> <y_vel_6> <y_vel_7> <y_vel_8> <y_vel_9> <y_vel_10> <y_vel_11> <y_vel_12> <y_vel_13> <y_vel_14> <y_vel_15> <y_vel_16> <y_vel_17> <y_vel_18> <y_vel_19> <y_vel_20> <y_vel_21> <y_vel_22> <y_vel_23> <y_vel_24> <y_vel_25> <y_vel_26> <y_vel_27> <y_vel_28> <y_vel_29> <y_vel_30> <y_vel_31> 
+INFO:Xst:2261 - The FF/Latch <x_vel_1> in Unit <project2> is equivalent to the following 30 FFs/Latches, which will be removed : <x_vel_2> <x_vel_3> <x_vel_4> <x_vel_5> <x_vel_6> <x_vel_7> <x_vel_8> <x_vel_9> <x_vel_10> <x_vel_11> <x_vel_12> <x_vel_13> <x_vel_14> <x_vel_15> <x_vel_16> <x_vel_17> <x_vel_18> <x_vel_19> <x_vel_20> <x_vel_21> <x_vel_22> <x_vel_23> <x_vel_24> <x_vel_25> <x_vel_26> <x_vel_27> <x_vel_28> <x_vel_29> <x_vel_30> <x_vel_31> 
+
+Optimizing unit <project2> ...
+
+Optimizing unit <paddles> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block project2, actual ratio is 27.
+FlipFlop x_vel_1 has been replicated 1 time(s)
+FlipFlop y_vel_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 295
+ Flip-Flops                                            : 295
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : project2.ngr
+Top Level Output File Name         : project2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 4648
+#      GND                         : 3
+#      INV                         : 333
+#      LUT1                        : 477
+#      LUT2                        : 655
+#      LUT3                        : 70
+#      LUT3_L                      : 3
+#      LUT4                        : 544
+#      LUT4_D                      : 2
+#      LUT4_L                      : 4
+#      MULT_AND                    : 62
+#      MUXCY                       : 1697
+#      MUXCY_L                     : 56
+#      MUXF5                       : 29
+#      MUXF6                       : 9
+#      VCC                         : 3
+#      XORCY                       : 701
+# FlipFlops/Latches                : 669
+#      FD                          : 52
+#      FDC                         : 1
+#      FDCE                        : 24
+#      FDE                         : 135
+#      FDP                         : 61
+#      FDPE                        : 18
+#      FDR                         : 139
+#      FDRE                        : 152
+#      FDRS                        : 4
+#      FDS                         : 10
+#      FDSE                        : 8
+#      LD                          : 64
+#      LDC                         : 1
+# RAMS                             : 2
+#      RAMB16_S1_S36               : 2
+# Shift Registers                  : 107
+#      SRL16                       : 52
+#      SRL16E                      : 1
+#      SRLC16E                     : 54
+# Clock Buffers                    : 5
+#      BUFG                        : 4
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 4
+#      OBUF                        : 27
+# Others                           : 1
+#      BSCAN_SPARTAN3              : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                     1269  out of   4656    27%  
+ Number of Slice Flip Flops:            669  out of   9312     7%  
+ Number of 4 input LUTs:               2195  out of   9312    23%  
+    Number used as logic:              2088
+    Number used as Shift registers:     107
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         5  out of     24    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------+-------------------------------------------------+-------+
+Clock Signal                                                          | Clock buffer(FF name)                           | Load  |
+----------------------------------------------------------------------+-------------------------------------------------+-------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                 | BUFG                                            | 135   |
+icon/U0/iUPDATE_OUT                                                   | NONE(icon/U0/U_ICON/U_iDATA_CMD)                | 1     |
+clk                                                                   | BUFGP                                           | 285   |
+icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+Inst_clock_gen/sclk1                                                  | BUFG                                            | 294   |
+Mcompar_y_cmp_lt0000_cy<7>3(Mcompar_y_cmp_lt0000_cy<7>:O)             | BUFG(*)(y_0)                                    | 32    |
+Mcompar_x_cmp_lt0000_cy<9>3(Mcompar_x_cmp_lt0000_cy<9>:O)             | BUFG(*)(x_0)                                    | 32    |
+----------------------------------------------------------------------+-------------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                     | Buffer(FF name)                                                                                                  | Load  |
+---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------+
+ila/N0(ila/XST_GND:G)                                                                              | NONE(ila/U0/I_DQ.G_DW[0].U_DQ)                                                                                   | 61    |
+icon/CONTROL0<20>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                             | NONE(ila/U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG)| 16    |
+icon/U0/U_ICON/U_CMD/iSEL_n(icon/U0/U_ICON/U_CMD/U_SEL_n:O)                                        | NONE(icon/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET)                                                           | 10    |
+ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iCLR(ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR:O)        | NONE(ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0)                                                              | 4     |
+ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iCLR(ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR:O)      | NONE(ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0)                                                             | 4     |
+ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/iCLR(ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_CLEAR:O)              | NONE(ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_DOUT0)                                                                 | 4     |
+ila/U0/I_YES_D.U_ILA/iARM(ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD:Q)             | NONE(ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_FDCE)                                                                   | 2     |
+icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)                             | NONE(ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_FDPE)                                                                   | 1     |
+icon/U0/U_ICON/iSEL_n(icon/U0/U_ICON/U_iSEL_n:O)                                                   | NONE(icon/U0/U_ICON/U_iDATA_CMD)                                                                                 | 1     |
+ila/U0/I_YES_D.U_ILA/U_STAT/ACTRESET_pulse(ila/U0/I_YES_D.U_ILA/U_STAT/U_RESET_EDGE/I_H2L.U_DOUT:Q)| NONE(ila/U0/I_YES_D.U_ILA/U_STAT/U_RISING)                                                                       | 1     |
+ila/U0/I_YES_D.U_ILA/iRESET<1>(ila/U0/I_YES_D.U_ILA/U_RST/G_RST[1].U_RST:Q)                        | NONE(ila/U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG)                                | 1     |
+---------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 12.800ns (Maximum Frequency: 78.126MHz)
+   Minimum input arrival time before clock: 10.256ns
+   Maximum output required time after clock: 14.464ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Clock period: 11.202ns (frequency: 89.268MHz)
+  Total number of paths / destination ports: 3344 / 284
+-------------------------------------------------------------------------
+Delay:               11.202ns (Levels of Logic = 17)
+  Source:            icon/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+  Destination:       ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO (FF)
+  Source Clock:      icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+  Destination Clock: icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: icon/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.514   1.074  U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (U0/U_ICON/iCORE_ID<0>)
+     LUT4:I0->O           32   0.612   1.103  U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT (U0/U_ICON/iCORE_ID_SEL<0>)
+     LUT4:I2->O           78   0.612   1.115  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE (CONTROL0<9>)
+     end scope: 'icon'
+     begin scope: 'ila'
+     LUT4:I2->O            1   0.612   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O           3   0.399   0.603  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8>)
+     LUT3:I0->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5_G (N41)
+     MUXF5:I1->O           1   0.278   0.387  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5 (U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5)
+     LUT3_L:I2->LO         1   0.612   0.103  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O21_SW0 (N38)
+     LUT4:I3->O            1   0.612   0.360  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39 (U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39)
+     LUT4:I3->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O87 (U0/I_YES_D.U_ILA/U_STAT/TDO_next)
+     FDE:D                     0.268          U0/I_YES_D.U_ILA/U_STAT/U_TDO
+    ----------------------------------------
+    Total                     11.202ns (6.456ns logic, 4.746ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon/U0/iUPDATE_OUT'
+  Clock period: 2.202ns (frequency: 454.060MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.202ns (Levels of Logic = 1)
+  Source:            icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon/U0/iUPDATE_OUT rising
+  Destination Clock: icon/U0/iUPDATE_OUT rising
+
+  Data Path: icon/U0/U_ICON/U_iDATA_CMD to icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.451  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.612   0.357  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.268          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.202ns (1.394ns logic, 0.808ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.068ns (frequency: 245.797MHz)
+  Total number of paths / destination ports: 551 / 384
+-------------------------------------------------------------------------
+Delay:               4.068ns (Levels of Logic = 2)
+  Source:            ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD (FF)
+  Destination:       ila/U0/I_YES_D.U_ILA/U_RST/G_RST[0].U_RST (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD to ila/U0/I_YES_D.U_ILA/U_RST/G_RST[0].U_RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD (U0/I_YES_D.U_ILA/U_RST/HALT_pulse)
+     LUT3:I0->O            1   0.612   0.360  U0/I_YES_D.U_ILA/U_RST/U_PRST1 (U0/I_YES_D.U_ILA/U_RST/PRE_RESET1)
+     LUT4:I3->O            8   0.612   0.643  U0/I_YES_D.U_ILA/U_RST/U_PRST0 (U0/I_YES_D.U_ILA/U_RST/PRE_RESET0)
+     FDS:S                     0.795          U0/I_YES_D.U_ILA/U_RST/G_RST[0].U_RST
+    ----------------------------------------
+    Total                      4.068ns (2.533ns logic, 1.535ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_clock_gen/sclk1'
+  Clock period: 12.800ns (frequency: 78.126MHz)
+  Total number of paths / destination ports: 7959104 / 684
+-------------------------------------------------------------------------
+Delay:               12.800ns (Levels of Logic = 38)
+  Source:            x_vel_1_1 (FF)
+  Destination:       ballx_0 (FF)
+  Source Clock:      Inst_clock_gen/sclk1 rising
+  Destination Clock: Inst_clock_gen/sclk1 rising
+
+  Data Path: x_vel_1_1 to ballx_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.514   0.905  x_vel_1_1 (x_vel_1_1)
+     LUT2:I1->O            1   0.612   0.000  Madd_ballx_add0001_lut<1> (Madd_ballx_add0001_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  Madd_ballx_add0001_cy<1> (Madd_ballx_add0001_cy<1>)
+     XORCY:CI->O           3   0.699   0.603  Madd_ballx_add0001_xor<2> (ballx_add0001<2>)
+     LUT1:I0->O            1   0.612   0.000  Msub_bally_sub0000_cy<2>_rt (Msub_bally_sub0000_cy<2>_rt)
+     MUXCY:S->O            1   0.404   0.000  Msub_bally_sub0000_cy<2> (Msub_bally_sub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<3> (Msub_bally_sub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<4> (Msub_bally_sub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<5> (Msub_bally_sub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<6> (Msub_bally_sub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<7> (Msub_bally_sub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<8> (Msub_bally_sub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<9> (Msub_bally_sub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<10> (Msub_bally_sub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<11> (Msub_bally_sub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<12> (Msub_bally_sub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<13> (Msub_bally_sub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<14> (Msub_bally_sub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<15> (Msub_bally_sub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<16> (Msub_bally_sub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<17> (Msub_bally_sub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<18> (Msub_bally_sub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<19> (Msub_bally_sub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<20> (Msub_bally_sub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<21> (Msub_bally_sub0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<22> (Msub_bally_sub0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<23> (Msub_bally_sub0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<24> (Msub_bally_sub0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<25> (Msub_bally_sub0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<26> (Msub_bally_sub0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<27> (Msub_bally_sub0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_bally_sub0000_cy<28> (Msub_bally_sub0000_cy<28>)
+     XORCY:CI->O           2   0.699   0.532  Msub_bally_sub0000_xor<29> (bally_sub0000<29>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_pause_cmp_gt0000_lut<10> (Mcompar_pause_cmp_gt0000_lut<10>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_pause_cmp_gt0000_cy<10> (Mcompar_pause_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           2   0.399   0.449  Mcompar_pause_cmp_gt0000_cy<11> (Mcompar_pause_cmp_gt0000_cy<11>)
+     LUT2:I1->O            1   0.612   0.360  Mmux_ballx_mux0004110_SW1 (N11)
+     LUT4_D:I3->O         57   0.612   1.149  Mmux_ballx_mux0004110 (N01)
+     LUT2:I1->O            1   0.612   0.000  Mmux_bally_mux000491 (bally_mux0004<17>)
+     FDE:D                     0.268          bally_14
+    ----------------------------------------
+    Total                     12.800ns (8.802ns logic, 3.997ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 274 / 154
+-------------------------------------------------------------------------
+Offset:              10.256ns (Levels of Logic = 17)
+  Source:            icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:SHIFT (PAD)
+  Destination:       ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO (FF)
+  Destination Clock: icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:SHIFT to ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN3:SHIFT    3   0.000   0.520  U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.612   1.225  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O           78   0.612   1.115  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE (CONTROL0<9>)
+     end scope: 'icon'
+     begin scope: 'ila'
+     LUT4:I2->O            1   0.612   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O           3   0.399   0.603  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8>)
+     LUT3:I0->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5_G (N41)
+     MUXF5:I1->O           1   0.278   0.387  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5 (U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5)
+     LUT3_L:I2->LO         1   0.612   0.103  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O21_SW0 (N38)
+     LUT4:I3->O            1   0.612   0.360  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39 (U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39)
+     LUT4:I3->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O87 (U0/I_YES_D.U_ILA/U_STAT/TDO_next)
+     FDE:D                     0.268          U0/I_YES_D.U_ILA/U_STAT/U_TDO
+    ----------------------------------------
+    Total                     10.256ns (5.942ns logic, 4.314ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.448ns (Levels of Logic = 2)
+  Source:            SW2 (PAD)
+  Destination:       ila/U0/I_DQ.G_DW[49].U_DQ (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW2 to ila/U0/I_DQ.G_DW[49].U_DQ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.106   1.074  SW2_IBUF (SW2_IBUF)
+     begin scope: 'ila'
+     FDP:D                     0.268          U0/I_DQ.G_DW[49].U_DQ
+    ----------------------------------------
+    Total                      2.448ns (1.374ns logic, 1.074ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_clock_gen/sclk1'
+  Total number of paths / destination ports: 1248 / 128
+-------------------------------------------------------------------------
+Offset:              5.864ns (Levels of Logic = 34)
+  Source:            SW2 (PAD)
+  Destination:       Inst_paddles/pos2_31 (FF)
+  Destination Clock: Inst_clock_gen/sclk1 rising
+
+  Data Path: SW2 to Inst_paddles/pos2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.106   1.226  SW2_IBUF (SW2_IBUF)
+     LUT2:I0->O            1   0.612   0.357  Inst_paddles/Mcount_pos21 (Inst_paddles/Mcount_pos2)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<0> (Inst_paddles/Mcount_pos2_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<1> (Inst_paddles/Mcount_pos2_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<2> (Inst_paddles/Mcount_pos2_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<3> (Inst_paddles/Mcount_pos2_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<4> (Inst_paddles/Mcount_pos2_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<5> (Inst_paddles/Mcount_pos2_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<6> (Inst_paddles/Mcount_pos2_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<7> (Inst_paddles/Mcount_pos2_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<8> (Inst_paddles/Mcount_pos2_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<9> (Inst_paddles/Mcount_pos2_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Inst_paddles/Mcount_pos2_cy<10> (Inst_paddles/Mcount_pos2_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<11> (Inst_paddles/Mcount_pos2_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<12> (Inst_paddles/Mcount_pos2_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<13> (Inst_paddles/Mcount_pos2_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<14> (Inst_paddles/Mcount_pos2_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<15> (Inst_paddles/Mcount_pos2_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<16> (Inst_paddles/Mcount_pos2_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<17> (Inst_paddles/Mcount_pos2_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<18> (Inst_paddles/Mcount_pos2_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<19> (Inst_paddles/Mcount_pos2_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<20> (Inst_paddles/Mcount_pos2_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<21> (Inst_paddles/Mcount_pos2_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<22> (Inst_paddles/Mcount_pos2_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<23> (Inst_paddles/Mcount_pos2_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<24> (Inst_paddles/Mcount_pos2_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<25> (Inst_paddles/Mcount_pos2_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<26> (Inst_paddles/Mcount_pos2_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<27> (Inst_paddles/Mcount_pos2_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<28> (Inst_paddles/Mcount_pos2_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_paddles/Mcount_pos2_cy<29> (Inst_paddles/Mcount_pos2_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Inst_paddles/Mcount_pos2_cy<30> (Inst_paddles/Mcount_pos2_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Inst_paddles/Mcount_pos2_xor<31> (Inst_paddles/Mcount_pos232)
+     FDRE:D                    0.268          Inst_paddles/pos2_31
+    ----------------------------------------
+    Total                      5.864ns (4.281ns logic, 1.583ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.182ns (Levels of Logic = 1)
+  Source:            Inst_clock_gen/sclk (FF)
+  Destination:       DAC_CLK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_clock_gen/sclk to DAC_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.514   0.499  Inst_clock_gen/sclk (Inst_clock_gen/sclk1)
+     OBUF:I->O                 3.169          DAC_CLK_OBUF (DAC_CLK)
+    ----------------------------------------
+    Total                      4.182ns (3.683ns logic, 0.499ns route)
+                                       (88.1% logic, 11.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_clock_gen/sclk1'
+  Total number of paths / destination ports: 137651 / 26
+-------------------------------------------------------------------------
+Offset:              14.464ns (Levels of Logic = 39)
+  Source:            Inst_paddles/pos1_1 (FF)
+  Destination:       Bout<6> (PAD)
+  Source Clock:      Inst_clock_gen/sclk1 rising
+
+  Data Path: Inst_paddles/pos1_1 to Bout<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.514   0.651  Inst_paddles/pos1_1 (Inst_paddles/pos1_1)
+     LUT1:I0->O            1   0.612   0.000  Msub_sB_sub0000_cy<1>_rt (Msub_sB_sub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Msub_sB_sub0000_cy<1> (Msub_sB_sub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<2> (Msub_sB_sub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<3> (Msub_sB_sub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<4> (Msub_sB_sub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<5> (Msub_sB_sub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<6> (Msub_sB_sub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<7> (Msub_sB_sub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<8> (Msub_sB_sub0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<9> (Msub_sB_sub0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<10> (Msub_sB_sub0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<11> (Msub_sB_sub0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<12> (Msub_sB_sub0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<13> (Msub_sB_sub0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<14> (Msub_sB_sub0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<15> (Msub_sB_sub0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<16> (Msub_sB_sub0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<17> (Msub_sB_sub0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<18> (Msub_sB_sub0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<19> (Msub_sB_sub0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<20> (Msub_sB_sub0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<21> (Msub_sB_sub0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<22> (Msub_sB_sub0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<23> (Msub_sB_sub0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<24> (Msub_sB_sub0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<25> (Msub_sB_sub0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<26> (Msub_sB_sub0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<27> (Msub_sB_sub0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<28> (Msub_sB_sub0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_sB_sub0000_cy<29> (Msub_sB_sub0000_cy<29>)
+     XORCY:CI->O           2   0.699   0.532  Msub_sB_sub0000_xor<30> (sB_sub0000<30>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_sB_cmp_gt0012_lut<30> (Mcompar_sB_cmp_gt0012_lut<30>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_sB_cmp_gt0012_cy<30> (Mcompar_sB_cmp_gt0012_cy<30>)
+     MUXCY:CI->O           2   0.399   0.449  Mcompar_sB_cmp_gt0012_cy<31> (Mcompar_sB_cmp_gt0012_cy<31>)
+     LUT4:I1->O            1   0.612   0.509  sB<7>15 (sB<7>15)
+     LUT4:I0->O            2   0.612   0.410  sB<7>120 (N7)
+     LUT4:I2->O            1   0.612   0.360  Bout<0>_SW1 (N22)
+     LUT4:I3->O           14   0.612   0.850  Bout<0> (Bout_0_OBUF)
+     OBUF:I->O                 3.169          Bout_6_OBUF (Bout<6>)
+    ----------------------------------------
+    Total                     14.464ns (10.703ns logic, 3.761ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mcompar_y_cmp_lt0000_cy<7>3'
+  Total number of paths / destination ports: 24021 / 24
+-------------------------------------------------------------------------
+Offset:              13.842ns (Levels of Logic = 18)
+  Source:            y_2 (LATCH)
+  Destination:       Bout<6> (PAD)
+  Source Clock:      Mcompar_y_cmp_lt0000_cy<7>3 rising
+
+  Data Path: y_2 to Bout<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              22   0.588   1.141  y_2 (y_2)
+     LUT1:I0->O            1   0.612   0.000  Mcompar_sB_cmp_lt0000_cy<0>_3_rt (Mcompar_sB_cmp_lt0000_cy<0>_3_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_sB_cmp_lt0000_cy<0>_3 (Mcompar_sB_cmp_lt0000_cy<0>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<1>_3 (Mcompar_sB_cmp_lt0000_cy<1>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<2>_3 (Mcompar_sB_cmp_lt0000_cy<2>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<3>_3 (Mcompar_sB_cmp_lt0000_cy<3>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<4>_3 (Mcompar_sB_cmp_lt0000_cy<4>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<5>_3 (Mcompar_sB_cmp_lt0000_cy<5>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<6>_3 (Mcompar_sB_cmp_lt0000_cy<6>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<7>_3 (Mcompar_sB_cmp_lt0000_cy<7>4)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0000_cy<8>_3 (Mcompar_sB_cmp_lt0000_cy<8>4)
+     MUXCY:CI->O           1   0.399   0.509  Mcompar_sB_cmp_lt0000_cy<9>_2 (Mcompar_sB_cmp_lt0000_cy<9>3)
+     LUT4:I0->O            1   0.612   0.387  sB_and00124 (sB_and00124)
+     LUT3:I2->O            1   0.612   0.360  sB_and001228_SW0 (N18)
+     LUT4:I3->O            4   0.612   0.568  sB_and001228 (sB_and0012)
+     LUT4:I1->O            2   0.612   0.410  sB<7>120 (N7)
+     LUT4:I2->O            1   0.612   0.360  Bout<0>_SW1 (N22)
+     LUT4:I3->O           14   0.612   0.850  Bout<0> (Bout_0_OBUF)
+     OBUF:I->O                 3.169          Bout_6_OBUF (Bout<6>)
+    ----------------------------------------
+    Total                     13.842ns (9.256ns logic, 4.585ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mcompar_x_cmp_lt0000_cy<9>3'
+  Total number of paths / destination ports: 11824 / 24
+-------------------------------------------------------------------------
+Offset:              12.757ns (Levels of Logic = 18)
+  Source:            x_2 (LATCH)
+  Destination:       Bout<6> (PAD)
+  Source Clock:      Mcompar_x_cmp_lt0000_cy<9>3 rising
+
+  Data Path: x_2 to Bout<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              12   0.588   0.969  x_2 (x_2)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_sB_cmp_lt0002_lut<2>1 (Mcompar_sB_cmp_lt0002_lut<2>1)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_sB_cmp_lt0002_cy<2>_0 (Mcompar_sB_cmp_lt0002_cy<2>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<3>_0 (Mcompar_sB_cmp_lt0002_cy<3>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<4>_0 (Mcompar_sB_cmp_lt0002_cy<4>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<5>_0 (Mcompar_sB_cmp_lt0002_cy<5>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<6>_0 (Mcompar_sB_cmp_lt0002_cy<6>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<7>_0 (Mcompar_sB_cmp_lt0002_cy<7>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<8>_0 (Mcompar_sB_cmp_lt0002_cy<8>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<9>_0 (Mcompar_sB_cmp_lt0002_cy<9>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<10>_0 (Mcompar_sB_cmp_lt0002_cy<10>1)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_sB_cmp_lt0002_cy<11>_0 (Mcompar_sB_cmp_lt0002_cy<11>1)
+     MUXCY:CI->O           1   0.399   0.509  Mcompar_sB_cmp_lt0002_cy<12> (Mcompar_sB_cmp_lt0002_cy<12>)
+     LUT4:I0->O            1   0.612   0.509  sB_or00024 (sB_or00024)
+     LUT4:I0->O            3   0.612   0.454  sB_or000230 (sB_or0002)
+     LUT4:I3->O            2   0.612   0.410  sB<7>120 (N7)
+     LUT4:I2->O            1   0.612   0.360  Bout<0>_SW1 (N22)
+     LUT4:I3->O           14   0.612   0.850  Bout<0> (Bout_0_OBUF)
+     OBUF:I->O                 3.169          Bout_6_OBUF (Bout<6>)
+    ----------------------------------------
+    Total                     12.757ns (8.696ns logic, 4.061ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.514ns (Levels of Logic = 0)
+  Source:            icon/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:TDO1 (PAD)
+  Source Clock:      icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: icon/U0/U_ICON/U_TDO_reg to icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:TDO1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.514   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN3:TDO1        0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS
+    ----------------------------------------
+    Total                      0.514ns (0.514ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.67 secs
+ 
+--> 
+
+
+Total memory usage is 681540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

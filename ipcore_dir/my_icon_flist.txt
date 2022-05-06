@@ -1,0 +1,13 @@
+# Output products list for <my_icon>
+my_icon.asy
+my_icon.ejp
+my_icon.gise
+my_icon.ngc
+my_icon.sym
+my_icon.vhd
+my_icon.vho
+my_icon.xco
+my_icon.xise
+my_icon_flist.txt
+my_icon_readme.txt
+my_icon_xmdf.tcl

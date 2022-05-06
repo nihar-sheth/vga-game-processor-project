@@ -1,0 +1,3 @@
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/clock_gen.vhi -module clock_gen -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clock_gen.vhd 
+vhdtdtfi -lib work clock_gen.vhd -prj simpleVideoGame -o clock_gen.spl -module clock_gen -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e clock_gen.spl /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/clock_gen.sym 

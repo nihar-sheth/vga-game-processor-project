@@ -1,0 +1,16 @@
+AR counter behavioral /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhd sub00/vhpl03 1574800240
+EN project2 NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd sub00/vhpl00 1574800243
+AR my_ila my_ila_a /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/my_ila.vhd sub00/vhpl15 1574800236
+AR ila ila_a /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/ila.vhd sub00/vhpl11 1574799325
+EN my_ila NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/my_ila.vhd sub00/vhpl14 1574800235
+AR icon icon_a /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/icon.vhd sub00/vhpl09 1574799323
+EN icon NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/icon.vhd sub00/vhpl08 1574799322
+AR clock_gen behavioral /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/clock_gen.vhd sub00/vhpl05 1574800238
+AR project2 behavioral /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd sub00/vhpl01 1574800244
+EN counter NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhd sub00/vhpl02 1574800239
+EN my_icon NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/my_icon.vhd sub00/vhpl12 1574800233
+AR my_icon my_icon_a /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/my_icon.vhd sub00/vhpl13 1574800234
+AR paddles behavioral /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhd sub00/vhpl07 1574800242
+EN paddles NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhd sub00/vhpl06 1574800241
+EN ila NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/ipcore_dir/ila.vhd sub00/vhpl10 1574799324
+EN clock_gen NULL /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/clock_gen.vhd sub00/vhpl04 1574800237

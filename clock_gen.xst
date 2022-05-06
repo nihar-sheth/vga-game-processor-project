@@ -1,0 +1,5 @@
+set -tmpdir "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/xst/projnav.tmp"
+set -xsthdpdir "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/xst"
+elaborate
+-ifn clock_gen.prj
+-ifmt mixed

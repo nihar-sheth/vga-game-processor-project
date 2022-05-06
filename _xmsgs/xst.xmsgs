@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd</arg>&quot; line <arg fmt="%d" index="2">115</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">my_icon</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd</arg>&quot; line <arg fmt="%d" index="2">117</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">my_ila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.vhd</arg>&quot; line <arg fmt="%d" index="2">250</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;VSync&gt;, &lt;HSync&gt;, &lt;y&gt;, &lt;x&gt;, &lt;p1_y&gt;, &lt;p2_y&gt;, &lt;bally&gt;, &lt;ballx&gt;, &lt;pause&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">vBP</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">hBP</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">32</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">x</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">32</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">y</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">y_vel_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">project2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">30 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;y_vel_2&gt; &lt;y_vel_3&gt; &lt;y_vel_4&gt; &lt;y_vel_5&gt; &lt;y_vel_6&gt; &lt;y_vel_7&gt; &lt;y_vel_8&gt; &lt;y_vel_9&gt; &lt;y_vel_10&gt; &lt;y_vel_11&gt; &lt;y_vel_12&gt; &lt;y_vel_13&gt; &lt;y_vel_14&gt; &lt;y_vel_15&gt; &lt;y_vel_16&gt; &lt;y_vel_17&gt; &lt;y_vel_18&gt; &lt;y_vel_19&gt; &lt;y_vel_20&gt; &lt;y_vel_21&gt; &lt;y_vel_22&gt; &lt;y_vel_23&gt; &lt;y_vel_24&gt; &lt;y_vel_25&gt; &lt;y_vel_26&gt; &lt;y_vel_27&gt; &lt;y_vel_28&gt; &lt;y_vel_29&gt; &lt;y_vel_30&gt; &lt;y_vel_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">x_vel_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">project2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">30 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_vel_2&gt; &lt;x_vel_3&gt; &lt;x_vel_4&gt; &lt;x_vel_5&gt; &lt;x_vel_6&gt; &lt;x_vel_7&gt; &lt;x_vel_8&gt; &lt;x_vel_9&gt; &lt;x_vel_10&gt; &lt;x_vel_11&gt; &lt;x_vel_12&gt; &lt;x_vel_13&gt; &lt;x_vel_14&gt; &lt;x_vel_15&gt; &lt;x_vel_16&gt; &lt;x_vel_17&gt; &lt;x_vel_18&gt; &lt;x_vel_19&gt; &lt;x_vel_20&gt; &lt;x_vel_21&gt; &lt;x_vel_22&gt; &lt;x_vel_23&gt; &lt;x_vel_24&gt; &lt;x_vel_25&gt; &lt;x_vel_26&gt; &lt;x_vel_27&gt; &lt;x_vel_28&gt; &lt;x_vel_29&gt; &lt;x_vel_30&gt; &lt;x_vel_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

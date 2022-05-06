@@ -1,0 +1,4 @@
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhi -module paddles -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work paddles.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhi -module paddles -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work paddles.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhi -module paddles -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work paddles.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/paddles.vhi -module paddles -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work paddles.vhd 

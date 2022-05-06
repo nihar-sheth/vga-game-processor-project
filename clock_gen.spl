@@ -1,0 +1,5 @@
+[Inputs]
+in_clk
+[Outputs]
+out_clk
+[BiDir]

@@ -1,0 +1,7 @@
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj simpleVideoGame -o /home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/counter.vhi -module counter -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 

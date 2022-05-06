@@ -1,0 +1,6 @@
+vhdl work "ipcore_dir/my_icon.vhd"
+vhdl work "paddles.vhd"
+vhdl work "ipcore_dir/my_ila.vhd"
+vhdl work "counter.vhd"
+vhdl work "clock_gen.vhd"
+vhdl work "project2.vhd"

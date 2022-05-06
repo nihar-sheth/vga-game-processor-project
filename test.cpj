@@ -1,0 +1,20 @@
+#ChipScope Pro Analyzer Project File, Version 3.0
+#Mon Nov 25 21:35:21 EST 2019
+deviceChain.deviceName0=XC3S500E
+deviceChain.deviceName1=XCF04S
+deviceChain.deviceName2=XC2C64A
+deviceChain.iRLength0=6
+deviceChain.iRLength1=8
+deviceChain.iRLength2=8
+deviceChain.name0=MyDevice0
+deviceChain.name1=MyDevice1
+deviceChain.name2=MyDevice2
+deviceIds=41c22093f504609306e5e093
+mdiAreaHeight=0.5960365853658537
+mdiAreaHeightLast=1.0990853658536586
+mdiCount=0
+navigatorHeight=0.2820121951219512
+navigatorHeightLast=0.2820121951219512
+navigatorWidth=0.37257019438444927
+navigatorWidthLast=0.37257019438444927
+signalDisplayPath=0

@@ -1,0 +1,16 @@
+# Output products list for <my_ila>
+_xmsgs/pn_parser.xmsgs
+my_ila.asy
+my_ila.cdc
+my_ila.ejp
+my_ila.gise
+my_ila.ncf
+my_ila.ngc
+my_ila.sym
+my_ila.vhd
+my_ila.vho
+my_ila.xco
+my_ila.xise
+my_ila_flist.txt
+my_ila_readme.txt
+my_ila_xmdf.tcl

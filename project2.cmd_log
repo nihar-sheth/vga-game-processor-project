@@ -1,0 +1,376 @@
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+xst -intstyle ise -ifn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.xst" -ofn "/home/student2/nssheth/Desktop/coe758/project2/simpleVideoGame/project2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 project2.ngc project2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o project2_map.ncd project2.ngd project2.pcf 
+par -w -intstyle ise -ol high -t 1 project2_map.ncd project2.ncd project2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml project2.twx project2.ncd -o project2.twr project2.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f project2.ut project2.ncd 
